@@ -4,6 +4,9 @@ target/
 !**/src/main/**
 !**/src/test/**
 
+**/src/main/resources/generatorConfig.xml
+*/lib
+
 ### STS ###
 .apt_generated
 .classpath

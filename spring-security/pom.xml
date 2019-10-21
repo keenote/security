@@ -10,7 +10,7 @@
     <packaging>jar</packaging>
     <artifactId>spring-security</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>spring-security</name>
+    <name>springsecurity</name>
     <description>spring security 实现案例</description>
 
     <properties>
