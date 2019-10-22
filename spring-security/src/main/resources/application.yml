@@ -4,4 +4,3 @@ spring:
   profiles:
     include:
       - common
-    active: @env.profile@
