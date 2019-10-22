@@ -187,8 +187,24 @@
                     </filesets>
                 </configuration>
             </plugin>
+            <plugin>
+                <artifactId>maven-release-plugin</artifactId>
+                <configuration>
+                    <autoVersionSubmodules>true</autoVersionSubmodules>
+                    <tagNameFormat>v@{project.version}</tagNameFormat>
+                    <generateReleasePoms>false</generateReleasePoms>
+                    <arguments>-DskipTests</arguments>
+                    <!--release:perform可以引用自动部署程序部署到maven库-->
+                    <goals>release:branch -DbranchName=v${project.version}</goals>
+
+                </configuration>
+            </plugin>
         </plugins>
     </build>
+    <scm>
+        <developerConnection>scm:git:ssh://git@github.com/keenote/security.git</developerConnection>
+        <tag>HEAD</tag>
+    </scm>
     <profiles>
         <profile>
             <id>liquibase-enabled</id>
