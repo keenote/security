@@ -107,6 +107,14 @@
                             </includes>
                             <targetPath>${project.basedir}/src/main/resources</targetPath>
                         </resource>
+                        <resource>
+                            <directory>${project.basedir}/../resources/db/changelog</directory>
+                            <filtering>true</filtering>
+                            <includes>
+                                <include>empty.xml</include>
+                            </includes>
+                            <targetPath>${project.basedir}/src/main/resources/db/changelog</targetPath>
+                        </resource>
                     </resources>
                     <useDefaultDelimiters>true</useDefaultDelimiters>
                 </configuration>

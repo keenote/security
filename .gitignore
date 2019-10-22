@@ -5,6 +5,7 @@ target/
 !**/src/test/**
 
 **/src/main/resources/generatorConfig.xml
+**/src/main/resources/db/changelog/empty.xml
 pom.xml.releaseBackup
 release.properties
 */lib
